@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+ }
+ header {
+    background-color: #000; /* Preto */
+    color: #fff;
+    padding: 20px 0;    
+    text-align: center;
+ }
+ nav ul {
+    list-style-type: none;
+    padding: 0;
+ }
+ nav ul li {
+    display: inline;
+    margin: 0 15px;
+ }
+ nav ul li a {
+    color: #fff;
+    text-decoration: none;
+ }
+ main {
+    padding: 20px;
+ }
+ section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #FFFAFA; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ h2 {
+    color: #000;
+ }
+ .imagem-introducao {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+ }
+ .palestrante {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+ }
+ .palestrante img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
+ }
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+ input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ button {
+    background-color: #000; /* Preto */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ button:hover {
+    background-color: #333; 
+ }
+ nav ul li a:hover {
+    text-decoration: underline;
+    transition: color 0.3s;
+ }
+ footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; 
+    color: #fff;
+ }
