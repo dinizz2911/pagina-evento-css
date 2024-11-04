@@ -1,88 +1,161 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eaeaea; 
-    color: #333;
-    margin: 0;
-    padding: 0;
- }
- header {
-    background-color: #000; 
-    color: #fff;
-    padding: 20px 0;    
-    text-align: center;
- }
- nav ul {
-    list-style-type: none;
-    padding: 0;
- }
- nav ul li {
-    display: inline;
-    margin: 0 15px;
- }
- nav ul li a {
-    color: #fff;
-    text-decoration: none;
- }
- main {
-    padding: 20px;
- }
- section {
-    margin: 20px 0;
-    padding: 20px;
-    background: #FFFAFA; 
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- }
- h2 {
-    color: #000;
- }
- .imagem-introducao {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 20px auto;
- }
- .palestrante {
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
- }
- .palestrante img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 200px;
- }
- form {
-    display: flex;
-    flex-direction: column;
- }
- input {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
- }
- button {
-    background-color: #000; 
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
- }
- button:hover {
-    background-color: #333; 
- }
- nav ul li a:hover {
-    text-decoration: underline;
-    transition: color 0.3s;
- }
- footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #000; 
-    color: #fff;
- }
+   font-family: Arial, sans-serif;
+   background-color: #ffffff; /* Fundo branco */
+   color: #333;
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   background: linear-gradient(to right, #2e7d32, #66bb6a); /* Gradiente verde */
+   color: #fff;
+   padding: 20px 0;    
+   text-align: center;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s;
+}
+
+nav ul li a:hover {
+   color: #ffeb3b; /* Amarelo ao passar o mouse */
+}
+
+main {
+   padding: 20px;
+   max-width: 1200px;
+   margin: auto;
+}
+
+section {
+   margin: 20px 0;
+   padding: 20px;
+   background: #ffffff; /* Fundo branco para seções */
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+   color: #2e7d32; /* Verde escuro para títulos */
+}
+
+.imagem-introducao {
+   width: 100%;
+   max-width: 800px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   display: block;
+   margin: 20px auto;
+}
+
+.palestrante {
+   display: inline-block;
+   margin: 15px;
+   text-align: center;
+   max-width: 200px;
+}
+
+.palestrante img {
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 100%;
+}
+
+.palestrantes-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+input {
+   margin: 10px 0;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+button {
+   background-color: #2e7d32; /* Verde escuro */
+   color: #fff;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+   background-color: #66bb6a; 
+}
+
+footer {
+   text-align: center;
+   padding: 20px 0;
+   background-color: #2e7d32; 
+   color: #fff;
+}
+
+#agenda {
+   background-color:#66bb6a	; 
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#agenda h2 {
+   color: #2e7d32;
+}
+
+#agenda ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#agenda ul li {
+   font-size: 1.2em; 
+   color: #444; 
+   margin: 10px 0; 
+   padding: 10px; 
+   background-color: #ffffff; 
+   border-radius: 5px; 
+   transition: background-color 0.3s; 
+}
+
+#agenda ul li:hover {
+   background-color: #66bb6a; 
+   color: #fff; 
+}
+
+#agenda ul li span {
+   font-weight: bold; 
+   font-size: 1.4em; 
+   color: #000; 
+}
+
+@media (max-width: 768px) {
+   nav ul li {
+       display: block;
+       margin: 10px 0;
+   }
+
+   .palestrante {
+       max-width: 100%;
+   }
+}
